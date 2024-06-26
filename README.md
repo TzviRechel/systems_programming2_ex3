@@ -86,7 +86,6 @@ The game board is implemented as a 5x5 grid of Tile objects, which approximates 
      - Edge 4: Between Node 4 (Lower Left) and Node 5 (Upper Left)
      - Edge 5: Between Node 5 (Upper Left) and Node 0 (Up)
    - The Board class ensures that adjacent Tiles share the appropriate Nodes and Edges.
-   - 
 4. Resource Distribution:
    - When a number is rolled, the Board iterates through all Tiles.
    - Tiles with the rolled number trigger resource production for adjacent settlements and cities.
@@ -94,5 +93,13 @@ The game board is implemented as a 5x5 grid of Tile objects, which approximates 
 5. Building Placement:
    - When a player builds a settlement, city, or road, the Board updates the appropriate Node or Edge.
    - It also updates any adjacent Tiles that share that Node or Edge.
+   - 
+## Main File Overview
+
+The main file (`main.cpp`) demonstrates the core gameplay loop of the Catan simulation. It:
+- Initializes the game board and players
+- Simulates multiple turns of gameplay, including dice rolls, resource distribution, and player actions
+- Illustrates how players interact with the board by building settlements, cities, and roads
+- Manages the flow of turns and game events until a winning condition is met
 
 This implementation allows for efficient game state management and ensures consistency across the board.
