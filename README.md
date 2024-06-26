@@ -60,13 +60,13 @@ The game board is implemented as a 5x5 grid of Tile objects, which approximates 
    - Resources and number tokens are distributed randomly or according to a predefined setup.
 
 2. Coordinate System:
-  -The game board is implemented as a 5x5 grid of Tile objects, which approximates the hexagonal layout of the Catan board. However, not all tiles in this grid are used; the layout is structured as follows:
+   - The game board is implemented as a 5x5 grid of Tile objects, which approximates the hexagonal layout of the Catan board. However, not all tiles in this grid are used; the layout is structured as follows:
 
-- The top row has 3 tiles.
-- The second row has 4 tiles.
-- The third row has 5 tiles.
-- The fourth row has 4 tiles.
-- The bottom row has 3 tiles.
+   - The top row has 3 tiles.
+   - The second row has 4 tiles.
+   - The third row has 5 tiles.
+   - The fourth row has 4 tiles.
+   - The bottom row has 3 tiles.
    
 
 3. Node and Edge Connectivity:
