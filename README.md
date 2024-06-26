@@ -1,6 +1,5 @@
 # Catan Game Implementation
-
-This project is an implementation of Catan in C++. It simulates the game mechanics, including board setup, resource management, and player interactions.
+This project is a simplified implementation of Catan in C++, designed for 3 players. It simulates the game mechanics, including board setup, resource management, and player interactions.
 
 ## Project Structure
 
@@ -61,8 +60,14 @@ The game board is implemented as a 5x5 grid of Tile objects, which approximates 
    - Resources and number tokens are distributed randomly or according to a predefined setup.
 
 2. Coordinate System:
-   - Each Tile is accessed using (row, column) coordinates in the 5x5 grid.
-   - The Board class includes methods to convert between grid coordinates and the traditional Catan coordinate system.
+  -The game board is implemented as a 5x5 grid of Tile objects, which approximates the hexagonal layout of the Catan board. However, not all tiles in this grid are used; the layout is structured as follows:
+
+- The top row has 3 tiles.
+- The second row has 4 tiles.
+- The third row has 5 tiles.
+- The fourth row has 4 tiles.
+- The bottom row has 3 tiles.
+   
 
 3. Node and Edge Connectivity:
    - Each Tile has 6 Nodes and 6 Edges.
