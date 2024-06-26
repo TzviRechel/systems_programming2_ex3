@@ -100,6 +100,5 @@ The main file (`main.cpp`) demonstrates the core gameplay loop of the Catan simu
 - Initializes the game board and players
 - Simulates multiple turns of gameplay, including dice rolls, resource distribution, and player actions
 - Illustrates how players interact with the board by building settlements, cities, and roads
-- Manages the flow of turns and game events until a winning condition is met
 
 This implementation allows for efficient game state management and ensures consistency across the board.
