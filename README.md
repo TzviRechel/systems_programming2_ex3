@@ -71,9 +71,22 @@ The game board is implemented as a 5x5 grid of Tile objects, which approximates 
 
 3. Node and Edge Connectivity:
    - Each Tile has 6 Nodes and 6 Edges.
+  - The nodes objects representing the corners of the hexagon oriented as follows:
+     - Node 0: Up
+     - Node 1: Upper Right
+     - Node 2: Lower Right
+     - Node 3: Down
+     - Node 4: Lower Left
+     - Node 5: Upper Left
+  - The edges objects representing the sides of the hexagon oriented as follows:
+     - Edge 0: Between Node 0 (Up) and Node 1 (Upper Right)
+     - Edge 1: Between Node 1 (Upper Right) and Node 2 (Lower Right)
+     - Edge 2: Between Node 2 (Lower Right) and Node 3 (Down)
+     - Edge 3: Between Node 3 (Down) and Node 4 (Lower Left)
+     - Edge 4: Between Node 4 (Lower Left) and Node 5 (Upper Left)
+     - Edge 5: Between Node 5 (Upper Left) and Node 0 (Up)
    - The Board class ensures that adjacent Tiles share the appropriate Nodes and Edges.
-   - This is achieved by having Tiles in the grid share references to the same Node and Edge objects where they meet.
-
+   - 
 4. Resource Distribution:
    - When a number is rolled, the Board iterates through all Tiles.
    - Tiles with the rolled number trigger resource production for adjacent settlements and cities.
