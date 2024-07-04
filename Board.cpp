@@ -1,3 +1,4 @@
+// tzvirechel@gmail.com
 #include <iostream>
 #include <exception>
 #include "Node.hpp"
